@@ -19,13 +19,7 @@ export const ProductCard = ({
   value,
   initialValues,
 }: ProductCardProps) => {
-  const { counter, increaseBy, maxCount, isMaxCountReached, reset } =
-    useProduct({
-      onChange,
-      product,
-      value,
-      initialValues,
-    });
+  const { counter, increaseBy, maxCount, isMaxCountReached, reset } =  useProduct({ onChange,product,value,initialValues});
 
   return (
     <Provider
